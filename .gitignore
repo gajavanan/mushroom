@@ -1,24 +1,32 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Production builds
+dist/
+frontend/dist/
+dist-ssr/
+
+# Python cache & virtual environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+ENV/
+
+# Environment variables & Vercel build output
+.env
+.env.*
+.vercel/
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# System & IDE
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.vscode/
+.idea/
+
+# Note: DO NOT ignore backend/*.pkl because model files are required for Vercel deployment!
